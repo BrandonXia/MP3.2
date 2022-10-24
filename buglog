@@ -1,0 +1,27 @@
+// Checkpoint two
+
+When loading filesystem:
+
+                Behavior: cannot read the correct file name
+
+                Problem: the pointer to inode structure is wrong
+
+                Solved by: correcting the inode structure
+
+ 
+
+                Behavior: cannot read the correct content of file
+
+                Problem: accidentally set the type of datablock as uint32_t
+
+                Solved by: making it uint8_t
+
+ 
+
+When displaying the file content:
+
+                Behavior: the fish in fname was divided to hald
+
+                Problem: putc not starting in the correct place
+
+                Solved by: teammate's new putc function
